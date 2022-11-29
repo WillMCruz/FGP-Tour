@@ -16,7 +16,7 @@ function novoUsuario(email, senha) {
     .createUserWithEmailAndPassword(email, senha)
     .then((result) => {
       alert(`Bem vindo, ${JSON.stringify(result.user.email)}`)
-      window.location.href = `${baseURL}/home.html`
+      window.location.href = `../home.html`
     })
     .catch(error => {
       console.log(error.code)
@@ -38,7 +38,7 @@ function loginFirebase(email, senha){
     .signInWithEmailAndPassword(email, senha)
     .then(result => {
       alert(`Bem vindo, ${JSON.stringify(result.user.email)}`)
-      window.location.href = `${baseURL}/home.html`
+      window.location.href = `../home.html`
     })
     .catch(error => {
       console.error(error.code)
@@ -57,7 +57,7 @@ function logoutFirebase(){
   .auth()
   .signOut()
   .then(function() {
-    window.location.href = baseURL
+    window.location.href = `../index.html`
   })
   .catch(function(error) {
     alert(`Não foi possível efetuar o logout \n Erro: ${error.message}`)
@@ -77,7 +77,7 @@ firebase
     console.log('Usuário logado!')
   } else {
     console.log('Usuário não logado. Redirecionando...')
-    window.location.href = baseURL
+    window.location.href = `../index.html`
   }
 })
 }
