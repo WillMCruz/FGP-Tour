@@ -1,6 +1,6 @@
 //baseURL
 const baseURL = window.location.hostname.includes('https://willmcruz.github.io/FGP-Tour')
-? 'http://127.0.0.1:5500'
+? 'https://willmcruz.github.io/FGP-Tour'
 : 'https://fgptour-default-rtdb.firebaseio.com'
 
 /**
