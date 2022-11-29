@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=PT+Sans+Narrow:wght@700&family=Roboto+Condensed:wght@300&family=Rubik:wght@600&display=swap');
+
+#face
+{
+    height: 55px;
+    width: 55px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+}
+#insta
+{
+    height: 55px;
+    width: 55px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+}
+#whats
+{
+    height: 55px;
+    width: 55px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+}
+.fonth1
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.fonth2
+{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.fonth3
+{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+.titulofoot
+{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+.texttour
+{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+#textfoot
+{
+    font-size: 16px;
+}
+#subfoot
+{
+    font-size: 18px;
+}
+#tlfoot
+{
+    font-size: 20px;
+}
+#btnface
+{
+    background-color: transparent;
+    border: none;
+}
+#btninsta
+{
+    background-color: transparent;
+    border: none;
+}
+#btnwhats
+{
+    background-color: transparent;
+    border: none;
+}
+#imglogo
+{
+    height: 80px;
+    width: 110px;
+}
+.login
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Backimg
+{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.Backimgv
+{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.Backimgb
+{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.Rodape
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.superior
+{
+    left: 0;
+    top: 0;  
+    width: 100%;
+}
+.bd
+{
+    padding-bottom: 50px;
+}

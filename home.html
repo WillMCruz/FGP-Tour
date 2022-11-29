@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href=" bootstrap-5.2.2/css/bootstrap.min.css">
+  </script>
+  <link rel="stylesheet" type="text/css" href=" bootstrap-5.2.2/js/bootstrap.bundle.min.js">
+  </script>
+  <title>FGP TOUR - Viagens</title>
+</head>
+
+<body onload="verificaLogado();obtemDados('viagem')">
+  <header>
+      <div class="container-fluid bg-dark" style="--bs-bg-opacity: .7;">                       
+          <nav class="navbar navbar-expand-lg navbar-dark p-2">
+              <div class="row">
+                  <div class="col-8">
+                      <img src="images/Logo.png" id="imglogo">
+                  </div>
+                  <div class="col-4 align-self-center">
+                      <div class="collapse navbar-collapse" id="navbarNav">                                   
+                          <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <button class="btn  btn-block btn-danger" onclick="logoutFirebase()">Logout</button>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>                       
+          </nav>       
+      </div>
+  </header>
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6">
+      <h1 class="bg-dark text-white text-center py-2">Agenda de Viagens</h1>
+      <h2 class="text-dark">Cadastro de Viagem</h2>
+      <form id="formCadastro">
+            <div class="form-group mt-3">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" autofocus>
+            </div>
+            <div class="form-group my-3"> 
+              <label for="nome">Sexo</label>           
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino">
+                <label class="form-check-label">
+                  Masculino
+                </label> 
+              </div>                            
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Feminino">
+                <label class="form-check-label">
+                  Feminino
+                </label>
+              </div>
+            </div>     
+            <div class="form-group mt-3">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group mt-3">
+              <label for="pacote">Pacote de Viagem</label>
+              <select name="pacote" id="pacote" class="form-select">
+                <option value="Orlando FL">Orlando FL</option>
+                <option value="Natal RN">Natal RN</option>
+                <option value="Gramado RS">Gramado RS</option>
+                <option value="Bonito MS">Bonito MS</option>
+                <option value="Porto de Galinhas PE">Porto de Galinhas PE</option>
+              </select>
+            </div>
+            <div class="form-group mt-3">
+              <label for="datavl">Data da Viagem</label>
+              <input type="date" class="form-control" name="datavl" id="datavl">
+            </div>
+            <div class="form-group mt-3">
+              <label for="valorvl">Valor da Viagem</label>
+              <input type="number" class="form-control" name="valorvl" id="valorvl" min="0" step="0.01">
+            </div>
+            <div class="form-group my-3">
+              <label class="py-2" for="nomeformapg">Forma de Pagamento</label>
+              <br>
+              <input type="radio" class="btn-check" name="formapg" id="formapgvs" value="Á Vista">
+              <label class="btn btn-outline-success" for="formapgvs">Á Vista</label>
+
+              <input type="radio" class="btn-check" name="formapg" id="formapgcred" value="Crédito">
+              <label class="btn btn-outline-success" for="formapgcred">Crédito</label>
+
+              <input type="radio" class="btn-check" name="formapg" id="formapgpix" value="PIX">
+              <label class="btn btn-outline-success" for="formapgpix">PIX</label>
+            </div>
+            <div class="form-group">
+              <input type="hidden" class="form-control" name="id" id="id">
+            </div>
+            <button class="btn btn-block btn-success" onclick="salvar(event, 'viagem')">💾 Salvar</button>
+            <button type="reset" class="btn btn-block btn-primary my-2">🔃 Limpar</button>
+  </form>
+  <h1 class="text-dark">Histórico Viagens</h1>
+  <table id="tabelaDados" class="table table-bordered">
+  </table>     
+    </div>
+    <div class="col-3">
+      
+    </div>
+  </div> 
+</div>   
+  
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/authentication.js"></script>
+  <script src="js/dados.js"></script>
+</body>
+
+</html>
