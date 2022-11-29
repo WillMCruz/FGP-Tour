@@ -10,11 +10,11 @@ Projeto desenvolvido como desafio para disciplina de programação para internet
 
 # 🧑🏻‍💼🧑🏻‍💼🧑🏻‍💼🧑🏻‍💼 Equipe do Projeto
 
-Guilherme Martins Santos
-Fabiano de Oliveira
-Pedro Villalba
-Willian Arruda Moraes da Cruz
+# Guilherme Martins Santos
+# Fabiano de Oliveira
+# Pedro Villalba
+# Willian Arruda Moraes da Cruz
 
 # 👨‍🔬 Professor  
 
-Ricardo Leme
+# Ricardo Leme
